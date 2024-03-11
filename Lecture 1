@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1f
+{
+    internal class Student
+    {
+        int rollNo;
+        string name;
+        int age;
+        int standard;
+
+        public void setStudent(int rollNo, string name, int age, int standard)
+        {
+            this.rollNo = rollNo;
+            this.name = name;
+            this.age = age;
+            this.standard = standard;
+        }
+
+        public void getStudent()
+        {
+            Console.WriteLine("Your Roll No is: {0}", this.rollNo);
+            Console.WriteLine("Your Roll No is: {0}", this.name);
+            Console.WriteLine("Your Roll No is: {0}", this.age);
+            Console.WriteLine("Your Class is: {0}", this.standard);
+
+
+        }
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("Enter Your Roll No: ");
+            //int roll = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Your Name: ");
+            //string name = Console.ReadLine();
+            //Console.WriteLine("Enter your Age: ");
+            //int age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your Class: ");
+            //int standard = int.Parse(Console.ReadLine());
+
+            Student mani = new Student();
+            mani.setStudent(75, "REHMANI", 25, 16);
+            mani.getStudent();
+            Console.WriteLine("---------------");
+            Student sham = new Student();
+            sham.setStudent(83, "SHMAI", 24, 16);
+            sham.getStudent();
+
+
+            Console.ReadLine();
+        }
+    }
+}
