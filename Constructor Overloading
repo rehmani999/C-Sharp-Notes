@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1f
+{
+    class Program
+    {
+        public Program() 
+        {
+            Console.WriteLine("This is first Constructor");
+        }
+        public Program(int a, int b)
+        {
+            Console.WriteLine("This is second Constructor = {0}", (a + b));
+        }
+        public Program(int a, int b, string c)
+        {
+            Console.WriteLine("This is second Constructor = {0}", (a + b + c));
+        }
+        static void Main(string[] args)
+        {
+            Program program = new Program(20, 30, "Rehmani");
+
+            Console.ReadLine();
+        }
+    }
+}
